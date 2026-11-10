@@ -89,6 +89,23 @@ You can also pipe content:
 cat path-to-file.pdf | markitdown
 ```
 
+### Interfaz gráfica local
+
+Para usar una interfaz web local, instala la dependencia `gui`:
+
+```bash
+pip install 'markitdown[gui]'
+```
+
+Inicia la interfaz con:
+
+```bash
+markitdown-gui
+```
+
+Desde el navegador podrás cargar uno o varios archivos, previsualizar el
+Markdown generado y descargar cada resultado como un archivo `.md`.
+
 ### Optional Dependencies
 MarkItDown has optional dependencies for activating various file formats. Earlier in this document, we installed all optional dependencies with the `[all]` option. However, you can also install them individually for more control. For example:
 
@@ -111,6 +128,7 @@ At the moment, the following optional dependencies are available:
 * `[az-content-understanding]` Installs dependencies for Azure Content Understanding
 * `[audio-transcription]` Installs dependencies for audio transcription of wav and mp3 files
 * `[youtube-transcription]` Installs dependencies for fetching YouTube video transcription
+* `[gui]` Installs the local Streamlit interface
 
 ### Plugins
 
